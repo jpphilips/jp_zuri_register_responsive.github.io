@@ -59,6 +59,9 @@ function showError() {
     }else if(email.validity.typeMismatch) {
     // If the field doesn't contain an email address,
     // display the following error message.
+    email.value = ''
+    email.placeholder = 'email@example.com';
+    email.classList.add('wemail')
     emailError.textContent = 'Looks like this is not an email';
     }
 

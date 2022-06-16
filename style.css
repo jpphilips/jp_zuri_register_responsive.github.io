@@ -129,6 +129,9 @@ button:hover{
     font-style: italic;
     padding: 4px;
 }
+.wemail::-webkit-input-placeholder {
+    color: hsl(0, 100%, 74%);
+}
 
 /* .error.active {
     padding: 0.3em;
