@@ -148,6 +148,9 @@ button:hover{
     body{
     background-image: url(img/bg-intro-mobile.png);
     }
+    main {
+        height:auto;
+    }
     .flex-container {
         flex-direction: column;
         padding: 30px;
