@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(img/bg-intro-desktop.png);
+    text-align: center;
+    background-color: hsl(0, 100%, 74%);
+    color: white;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+main {
+    height: 100vh;
+    display: grid;
+    align-content: center;
+}
+
+.flex-container {
+    display: flex;
+    margin:auto;
+    padding: 185px;
+    justify-content: space-evenly;
+}
+
+.info-text {
+    text-align: left;
+    width: 50%;
+    align-self: center;
+}
+
+.info-text h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.info-text p {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.trial-p{
+    border-radius: 7px;
+    padding: 15px 15px;
+    background-color: hsl(248, 32%, 49%);
+    margin-bottom: 20px;
+    flex: .8;
+    filter: drop-shadow(0 7px 0px rgba(0,0,0,0.1));
+}
+.form-block{
+    flex: .8;
+}
+form{
+    background-color: white;
+    border-radius: 7px;
+    padding: 30px;
+    filter: drop-shadow(0 7px 0px rgba(0, 0, 0, 0.1));
+
+}
+input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 25px;
+    border: 1px solid hsl(0, 1%, 63%);
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+input:active, input:focus{
+    border: 1px solid hsl(248, 32%, 49%);
+}
+
+button{
+    width: 100%;
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    box-sizing: border-box;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 7px;
+    margin-bottom: 15px;
+    filter: drop-shadow(0 3px 0px hsla(154, 58%, 33%, 0.8));
+
+}
+
+.terms{
+    color:hsl(246, 25%, 77%);
+    font-size: 9px;
+    font-weight: 500;
+}
+
+.terms-i {
+    color: hsl(0, 100%, 74%);
+}
+
+
+/* Responsive */
+
+@media screen and (max-width: 800px) {
+    body{
+    background-image: url(img/bg-intro-mobile.png);
+    }
+    .flex-container {
+        flex-direction: column;
+        padding: 30px;
+    }
+    .info-text{
+        margin: 60px 0px;
+        width: 100%;
+        text-align: center;
+    }
+}
