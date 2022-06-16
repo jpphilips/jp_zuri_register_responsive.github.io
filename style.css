@@ -22,14 +22,14 @@ main {
 .flex-container {
     display: flex;
     margin:auto;
-    padding: 185px;
-    justify-content: space-evenly;
+    padding: 160px;
+    justify-content: space-between;
 }
 
 .info-text {
     text-align: left;
-    width: 50%;
     align-self: center;
+    flex: 1;
 }
 
 .info-text h1 {
@@ -47,12 +47,21 @@ main {
     padding: 15px 15px;
     background-color: hsl(248, 32%, 49%);
     margin-bottom: 20px;
-    flex: .8;
     filter: drop-shadow(0 7px 0px rgba(0,0,0,0.1));
+    font-weight:600;
 }
+
+.sub-plan {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+
 .form-block{
-    flex: .8;
+    flex: 1;
+    padding: 0px 0px 0px 60px;
 }
+
 form{
     background-color: white;
     border-radius: 7px;
@@ -72,6 +81,10 @@ input {
 input:active, input:focus{
     border: 1px solid hsl(248, 32%, 49%);
 }
+input::placeholder {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
 
 button{
     width: 100%;
@@ -89,6 +102,11 @@ button{
 
 }
 
+button:hover{
+    background-color: hsl(154, 72%, 56%);
+
+}
+
 .terms{
     color:hsl(246, 25%, 77%);
     font-size: 9px;
@@ -99,6 +117,11 @@ button{
     color: hsl(0, 100%, 74%);
 }
 
+.error {
+    text-align: right;
+    color: hsl(0, 100%, 74%);
+
+}
 
 /* Responsive */
 
@@ -111,8 +134,14 @@ button{
         padding: 30px;
     }
     .info-text{
+        flex:none;
+        align-self: unset;
         margin: 60px 0px;
         width: 100%;
         text-align: center;
+    }
+    .form-block {
+        flex:none;
+        padding: 0;
     }
 }
