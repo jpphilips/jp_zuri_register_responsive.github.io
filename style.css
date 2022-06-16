@@ -82,6 +82,7 @@ input {
 }
 input:active, input:focus{
     border: 1px solid hsl(248, 32%, 49%);
+    border-color: hsl(248, 32%, 49%);
 }
 
 input::placeholder {
@@ -129,13 +130,17 @@ button:hover{
     font-style: italic;
     padding: 4px;
 }
+.invalid-input{
+    border: 1px solid hsl(0, 100%, 74%);
+}
 .wemail::-webkit-input-placeholder {
     color: hsl(0, 100%, 74%);
 }
 
-/* .error.active {
+
+.error.active {
     padding: 0.3em;
-} */
+}
 
 /* Responsive */
 

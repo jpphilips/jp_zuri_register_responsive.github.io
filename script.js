@@ -47,14 +47,20 @@ function showError() {
     if(fname.validity.valueMissing) {
     // If the field is empty,
     // display the following error message.
+    fname.placeholder = ''
+    fname.classList.add('invalid-input')
     fnameError.textContent = 'First Name cannot be empty';
     }
 
     if(lname.validity.valueMissing) {
+    lname.placeholder = ''
+    lname.classList.add('invalid-input')
     lnameError.textContent = 'Last Name cannot be empty';
     }
 
     if(email.validity.valueMissing) {
+    email.placeholder = ''
+    email.classList.add('invalid-input')
     emailError.textContent = 'Email Address cannot be empty';
     }else if(email.validity.typeMismatch) {
     // If the field doesn't contain an email address,
@@ -62,13 +68,16 @@ function showError() {
     email.value = ''
     email.placeholder = 'email@example.com';
     email.classList.add('wemail')
+    email.classList.add('invalid-input')
     emailError.textContent = 'Looks like this is not an email';
     }
 
     if(pword.validity.valueMissing) {
+    pword.placeholder = ''
+    pword.classList.add('invalid-input')
     pwordError.textContent = 'Password cannot be empty';
     }
 
   // Set the styling appropriately
-//   fnameError.className = 'error active';
+  fnameError.className = 'error active';
 }
