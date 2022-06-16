@@ -75,9 +75,11 @@ input {
     padding: 12px 25px;
     border: 1px solid hsl(0, 1%, 63%);
     border-radius: 5px;
-    margin-bottom: 15px;
+    margin-top: 15px;
 }
-
+.fname{
+    margin-top: 0;
+}
 input:active, input:focus{
     border: 1px solid hsl(248, 32%, 49%);
 }
@@ -98,7 +100,7 @@ button{
     padding: 12px 25px;
     border: none;
     border-radius: 7px;
-    margin-bottom: 15px;
+    margin: 15px 0px;
     filter: drop-shadow(0 3px 0px hsla(154, 58%, 33%, 0.8));
 
 }
@@ -121,14 +123,16 @@ button:hover{
 .error {
     text-align: right;
     color: hsl(0, 100%, 74%);
-    font-size: 12px;
-    width: 100%;
+    font-size: 10px;
+    display: block;
     box-sizing: border-box;
+    font-style: italic;
+    padding: 4px;
 }
 
-.error.active {
-    /* padding: 0.3em; */
-}
+/* .error.active {
+    padding: 0.3em;
+} */
 
 /* Responsive */
 
