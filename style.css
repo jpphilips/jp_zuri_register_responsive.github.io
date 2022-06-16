@@ -81,6 +81,7 @@ input {
 input:active, input:focus{
     border: 1px solid hsl(248, 32%, 49%);
 }
+
 input::placeholder {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
@@ -120,7 +121,13 @@ button:hover{
 .error {
     text-align: right;
     color: hsl(0, 100%, 74%);
+    font-size: 12px;
+    width: 100%;
+    box-sizing: border-box;
+}
 
+.error.active {
+    /* padding: 0.3em; */
 }
 
 /* Responsive */
