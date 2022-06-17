@@ -168,6 +168,7 @@ button:hover{
     }
     .flex-container {
         flex-direction: column;
+        padding: 0 4%;
     }
     .info-text{
         flex:none;
