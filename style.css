@@ -21,10 +21,10 @@ main {
 
 .flex-container {
     display: flex;
-    margin:auto;
-    padding: 160px;
-    justify-content: space-between;
+    padding: 0 15.5%;
 }
+
+/* text on the :left */
 
 .info-text {
     text-align: left;
@@ -42,6 +42,13 @@ main {
     font-weight: 500;
 }
 
+/* form on the right */
+
+.form-block {
+    flex: 1;
+    padding: 0px 0px 0px 40px;
+}
+
 .trial-p{
     border-radius: 7px;
     padding: 15px 15px;
@@ -56,11 +63,6 @@ main {
     font-size: 14px;
 }
 
-
-.form-block{
-    flex: 1;
-    padding: 0px 0px 0px 60px;
-}
 
 form{
     background-color: white;
@@ -80,14 +82,17 @@ input {
 .fname{
     margin-top: 0;
 }
-input:active, input:focus{
-    border: 1px solid hsl(248, 32%, 49%);
-    border-color: hsl(248, 32%, 49%);
-}
 
 input::placeholder {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
+}
+
+input:active,
+input:focus {
+    outline: 0;
+    border: 1.5px solid hsl(248, 32%, 49%);
+    caret-color: hsl(248, 32%, 49%);
 }
 
 button{
@@ -111,6 +116,7 @@ button:hover{
 
 }
 
+
 .terms{
     color:hsl(246, 25%, 77%);
     font-size: 10px;
@@ -120,6 +126,8 @@ button:hover{
 .terms-i {
     color: hsl(0, 100%, 74%);
 }
+
+/* error styling */
 
 .error {
     text-align: right;
@@ -131,20 +139,27 @@ button:hover{
     padding: 4px;
 }
 .invalid-input{
-    border: 1px solid hsl(0, 100%, 74%);
+    outline: none;
+    border: none;
+    border: 2px solid hsl(0, 100%, 74%);
+    background-image: url(img/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-origin: content-box;
+    background-size: 20px;
 }
 .wemail::-webkit-input-placeholder {
     color: hsl(0, 100%, 74%);
 }
 
-
 .error.active {
     padding: 0.3em;
 }
 
+
 /* Responsive */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 750px) {
     body{
     background-image: url(img/bg-intro-mobile.png);
     }
@@ -153,7 +168,6 @@ button:hover{
     }
     .flex-container {
         flex-direction: column;
-        padding: 30px;
     }
     .info-text{
         flex:none;
