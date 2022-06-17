@@ -21,7 +21,7 @@ main {
 
 .flex-container {
     display: flex;
-    padding: 0 15.5%;
+    padding: 0 14%;
 }
 
 /* text on the :left */
